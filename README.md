@@ -166,7 +166,7 @@ flowchart TD
 | # | Video | Topic | Folder | Status |
 |---|-------|-------|--------|--------|
 | 1 | RAG \| How does RAG Work \| RAG Explained | Fundamentals, why RAG, architecture | [`01_rag_fundamentals`](01_rag_fundamentals) | ⬜ |
-| 2 | Document Loaders in LangChain | Loading data from files, web, etc. | [`02_document_loaders`](02_document_loaders) | ⬜ |
+| 2 | Document Loaders in LangChain | Text, PDF, CSV, directory and web loaders — [notes & scripts](02_document_loaders/README.md) | [`02_document_loaders`](02_document_loaders) | ⬜ |
 | 3 | Text Splitters in LangChain | Chunking strategies | [`03_text_splitters`](03_text_splitters) | ⬜ |
 | 4 | Vector Stores in LangChain | Embeddings + vector DBs | [`04_vector_stores`](04_vector_stores) | ⬜ |
 | 5 | Retrievers in LangChain | Retrieval strategies | [`05_retrievers`](05_retrievers) | ⬜ |
@@ -202,6 +202,9 @@ rag-playlist/
 │
 ├── 01_rag_fundamentals/      # One folder per video: README (notes) + notebooks/scripts
 ├── 02_document_loaders/
+│   ├── README.md             # Loaders covered, how to run, source repo link
+│   ├── scripts/              # text / pdf / csv / directory / web loader scripts
+│   └── data/                 # Sample inputs (cricket.txt, CSV, PDFs, books/)
 ├── 03_text_splitters/
 ├── 04_vector_stores/
 ├── 05_retrievers/
@@ -218,8 +221,11 @@ Each module folder follows the same convention:
 NN_topic/
 ├── README.md        # Video link, key concepts, notes, TODO checklist
 ├── notebooks/       # Jupyter notebooks that follow along with the video
-└── scripts/         # Cleaned-up, runnable versions
+├── scripts/         # Cleaned-up, runnable versions
+└── data/            # (optional) Sample inputs that ship with the module's scripts
 ```
+
+Each video's README lives in its own folder; this top-level README stays the overview.
 
 ---
 
